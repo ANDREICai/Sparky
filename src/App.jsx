@@ -10,7 +10,9 @@ const router = createBrowserRouter(
     { path: "/Services", element: <Services /> },
         { path: "/Contact", element: <Contact /> },
   ],
-  
+    {
+    basename: "/", // 👈 this automatically prefixes all routes
+  }
 );
 
 export default function App() {
